@@ -1,0 +1,67 @@
+.portfolio-list-container {
+    margin-left: 55px;
+    padding-top: 0.4em;
+}
+.portfolio-list-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-lists {
+    display: flex;
+    padding-top: 2em;
+    position: relative;
+    align-items: center;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+.portfolio-lists-items {
+    position: relative;
+}
+.portfolio-lists-items:hover .portfolio-image {
+    transform: scale(1.2);
+    margin: 0 3opx;
+    opacity: 0.5;
+}
+.portfolio-image{
+    transition: all 1s ease-in-out;
+    padding-top: 0em;
+    border-radius: 20px;
+    margin-left: 50px;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    object-fit: cover;
+}
+.portfolio-title-span {
+    font-size: x-large;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.portfolio-desc {
+    margin-left: 70px;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    /* position: absolute; */
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.portfolio-button {
+    opacity: 0;
+    font-size: x-large;
+    font-weight: bold;
+    color: red;
+    transition: all 1s ease-in-out;
+}
+.portfolio-lists-items:hover .portfolio-title-span,
+.portfolio-lists-items:hover .portfolio-button,
+.portfolio-lists-items:hover .portfolio-desc{
+    opacity: 1;
+    cursor: pointer;
+}
